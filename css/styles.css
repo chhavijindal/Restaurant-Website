@@ -281,7 +281,8 @@ font-style: italic;
 }
 .navbar-brand h1 { /* Restaurant name */
   padding-top: 10px;
-  font-size: 5vw; /* 1vw = 1% of viewport width */
+  margin-top: 5px;
+  font-size: 4vw; /* 1vw = 1% of viewport width */
 }
 .navbar-brand p { /* Kosher cert */
   font-size: .6em;
@@ -333,6 +334,8 @@ font-style: italic;
 .container .jumbotron {
   margin-top: 30px;
   padding: 0;
+  background: url('../images/jumb_768.jpg') no-repeat;
+  /* height: 432px; */
 }
 #menu-tile, #specials-tile {
   width: 360px;
