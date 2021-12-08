@@ -334,8 +334,8 @@ font-style: italic;
 .container .jumbotron {
   margin-top: 30px;
   padding: 0;
-  background: url('../images/jumb_768.jpg') no-repeat;
-  height: 432px;
+  /* background: url('../images/jumb_768.jpg') no-repeat;
+  height: 432px; */
 }
 #menu-tile, #specials-tile {
   width: 360px;
