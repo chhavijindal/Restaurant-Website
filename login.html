@@ -45,8 +45,8 @@
               <a href="#" onclick="$dc.loadMenuCategories();">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
-            <li>
-              <a href="login.html">
+            <li class="active">
+              <a href="#">
                 <span class="glyphicon glyphicon-log-in"></span><br class="hidden-xs"> Log In</a>
             </li>
             <li>
@@ -71,7 +71,45 @@
   </div>
   <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
 
-  <div id="main-content" class="container"></div>
+  <!-- Form code -->
+  <div id="#log" class="login-wrapper">
+    <form action="#login-success" class="form">
+      <img src="images/avatar.png" alt="">
+      <h2>LOGIN</h2>
+      <div class="input-group">
+        <input type="text" name="loginUser" id="loginUser" required>
+        <label for="loginUser">User Name</label>
+      </div>
+      <div class="input-group">
+        <input type="password" name="loginPassword" id="loginPassword" required>
+        <label for="loginPassword">Password</label>
+      </div>
+      <input type="submit" value="Login" class="submit-btn">
+      <a href="#forgot-pw" class="forgot-pw">Forgot Password?</a>
+    </form>
+
+    <div id="forgot-pw">
+      <form action="#login-success" class="form">
+        <a href="login.html" class="close">&times;</a>
+        <h2>Reset Password</h2>
+        <div class="input-group">
+          <input type="email" name="email" id="email" required>
+          <label for="email">Email</label>
+        </div>
+        <input type="submit" value="Submit" class="submit-btn">
+      </form>
+    </div>
+
+    <div id="login-success">
+        <form action="index.html" class="form">
+          <!-- <a href="#" class="close">&times;</a> -->
+          <h2>Login Sucessful!</h2>
+          <br><h1>Welcome to <br><br> SIPS & BITES <br>by CHHAVI JINDAL</h1><br>
+          <input type="submit" value="Continue" class="submit-btn">
+        </form>
+      </div>
+  </div>
+  <!-- end of form code -->
 
   <footer class="panel-footer">
     <div class="container">
