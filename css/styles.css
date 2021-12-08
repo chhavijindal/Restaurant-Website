@@ -125,7 +125,7 @@ box-shadow: 0 0 50px var(--clr-dark);
 border: 2px solid var(--clr-dark);
 }
 
-#menu-tile, #specials-tile, #map-tile {
+#menu-tile, #specials-tile{
 height: 250px;
 width: 100%;
 margin-bottom: 15px;
@@ -133,7 +133,10 @@ position: relative;
 border: 2px solid var(--clr-dark);
 overflow: hidden;
 }
-#menu-tile:hover, #specials-tile:hover, #map-tile:hover {
+#map-tile{
+  opacity: 0;
+}
+#menu-tile:hover, #specials-tile:hover {
 box-shadow: 0 1px 5px 1px #cccccc;
 }
 #menu-tile {
@@ -144,7 +147,7 @@ background-position: center;
 background: url('../images/specials-tile.jpg') no-repeat;
 background-position: center;
 }
-#menu-tile span, #specials-tile span, #map-tile span {
+#menu-tile span, #specials-tile span {
 position: absolute;
 bottom: 0;
 right: 0;
